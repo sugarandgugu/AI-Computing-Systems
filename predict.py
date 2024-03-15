@@ -43,7 +43,7 @@ def inference(img,model_name):
     # 解析出置信度
     confs = top_n[0].cpu().detach().numpy().squeeze()
     # 载入imagecsv文件
-    df = pd.read_csv('/Users/sugarfly/Desktop/film/上学/智能计算系统/课程答辩/imagenet_class_index.csv')
+    df = pd.read_csv('imagenet_class_index.csv')
     idx_to_labels = {}
     for idx, row in df.iterrows():
         idx_to_labels[row['ID']] = [row['wordnet'], row['class']]
