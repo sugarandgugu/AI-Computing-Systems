@@ -63,7 +63,6 @@ def inference(img,model_name):
     img_ = Image.fromarray(img_bgr)
     return img_,predict_class
 
-# "https://download.pytorch.org/models/vgg19-dcbb9e9d.pth" to /Users/sugarfly/.cache/torch/hub/checkpoints/vgg19-dcbb9e9d.pth
 
 
 demo = gr.Interface(
